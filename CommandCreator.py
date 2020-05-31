@@ -34,10 +34,10 @@ def already_exists(conn, name, guild):
 def edit(file, guild, current_name, new_name=None, type=None, info=None, description=None, url=None, min=0, max=1):
     """ Modifies a given command to have certain functions provided by the user """
     conn = sqlite3.connect(file)
-    c = self.conn.cursor()
+    c = conn.cursor()
     name = current_name
-    if newName != None:
-        c.execute(f"UPDATE commands SET command = '{new_name}' WHERE guild = {guild} AND command = '{currentName}'")
+    if new_name != None:
+        c.execute(f"UPDATE commands SET command = '{new_name}' WHERE guild = {guild} AND command = '{current_name}'")
         name = new_name
     if type != None:
         c.execute(f"UPDATE commands SET type = '{type}' WHERE guild = {guild} AND command = '{name}'")
