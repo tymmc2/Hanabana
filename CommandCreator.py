@@ -29,7 +29,7 @@ def already_exists(conn, name, guild):
             return True
     return False
 
-print(create(r'commands.db', '582704905945612309', 'wow', 'random'))
+# print(create(r'commands.db', '582704905945612309', 'wow', 'random'))
 
 def edit(file, guild, current_name, new_name=None, type=None, info=None, description=None, url=None, min=0, max=1):
     """ Modifies a given command to have certain functions provided by the user """

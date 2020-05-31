@@ -4,3 +4,4 @@ bot-env
 commands.db
 ranks.db
 python.*
+__pycache__

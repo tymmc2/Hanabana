@@ -25,7 +25,7 @@ class CommandTemplate:
             random_val = math.floor(rand() * len(split_version))
             self.url = split_version[random_val]
         embed.set_image(url=self.url)
-        embed.set_footer(text=f"Hanabana  | ?{self.name}")
+        embed.set_footer(text=f"Hanabana | ?{self.name}")
         return embed
 
     def random_command(self):
