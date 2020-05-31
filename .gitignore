@@ -1,0 +1,6 @@
+*.env
+bot-env
+.vs
+commands.db
+ranks.db
+python.*
